@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Riyadh Fitness Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<img src="logo.jpeg" alt="Riyadh Fitness Zone Logo" id="siteLogo">
+		<h1>Riyadh Fitness Zone</h1>
+	</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+
+    <main>
+        <h2>Facility Preview</h2>
+        <p>Hover over the image to see our modern equipment:</p>
+        
+        <img id="hoverImg" src="gym.jpeg" alt="Riyadh Fitness Center" style="width:200px; height:200px; transition: 0.3s;">
+    </main>
+
+    <script>
+        var img = document.getElementById("hoverImg");
+        img.onmouseover = function() {
+            img.style.width = "400px";
+            img.style.height = "400px";
+        };
+        img.onmouseout = function() {
+            img.style.width = "200px";
+            img.style.height = "200px";
+        };
+    </script>
+
+</body>
+</html>
